@@ -7,6 +7,7 @@
  */
 
 import LanguageSwitcher from "@/components/language-switcher";
+import ThemeSwitcher from "@/components/theme-switcher";
 import { useI18n } from "@/lib/i18n/provider";
 import Link from "next/link";
 import Image from "next/image";
@@ -80,7 +81,7 @@ export default function Sidebar({
                   block px-3 py-2.5 rounded text-sm
                   ${
                     isActive
-                      ? "bg-surface-hover text-foreground font-medium"
+                      ? "bg-accent-soft text-foreground font-medium"
                       : "text-muted hover:text-foreground hover:bg-surface-hover"
                   }
                 `}
@@ -92,7 +93,7 @@ export default function Sidebar({
         </nav>
 
         <div className="px-5 py-4 border-t border-border">
-          <div className="mb-4"><LanguageSwitcher /></div>
+          <div className="mb-4 space-y-2"><LanguageSwitcher /><ThemeSwitcher /></div>
           <p className="text-sm text-foreground truncate">{workspaceName}</p>
           <p className="text-xs text-muted">{t("Self-hosted")}</p>
           <a
