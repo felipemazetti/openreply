@@ -22,7 +22,7 @@
   --accent-hover: #ea580c;
   --accent-soft: color-mix(in srgb, var(--accent) 10%, transparent);
   --success: light-dark(#16a34a, #22c55e);
-  --error: light-dark(#dc2626, #ef4444);
+  --error: light-dark(#dc2626, #f87171);
   --warning: light-dark(#d97706, #f59e0b);
 }
 
@@ -123,7 +123,7 @@ select:focus-visible {
   --color-zernio-border: #D9D8D3;
   --color-zernio-charcoal: #2D2D2D;
 }
-.zernio-sponsor { background: var(--color-zernio-cream); color: var(--color-zernio-charcoal); border-color: var(--color-zernio-border); }
+.zernio-sponsor { background: var(--color-zernio-cream); color: var(--color-zernio-charcoal); border-color: var(--color-zernio-border); color-scheme: light; }
 .zernio-action { background: var(--color-zernio-coral); color: white; }
 
 @font-face {
